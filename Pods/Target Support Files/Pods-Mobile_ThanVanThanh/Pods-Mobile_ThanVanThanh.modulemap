@@ -1,0 +1,6 @@
+framework module Pods_Mobile_ThanVanThanh {
+  umbrella header "Pods-Mobile_ThanVanThanh-umbrella.h"
+
+  export *
+  module * { export * }
+}
