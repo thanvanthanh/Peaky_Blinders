@@ -55,6 +55,15 @@ class HistoryTableViewCell: UITableViewCell {
         label.font = .boldSystemFont(ofSize: 18)
         return label
     }()
+//    var listTrans: ResultItem? {
+//        didSet {
+//            if let listTrans = listTrans {
+//                timeLabel.text = listTrans.dateTime
+//                monneyLabel.text = String(listTrans.transValue)
+//                tradingLabel.text = listTrans.content
+//            }
+//        }
+//    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

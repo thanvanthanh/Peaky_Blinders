@@ -11,6 +11,8 @@ import RxCocoa
 
 class MainViewController: UIViewController {
     
+    private var worker: DetailSceneWorkerLogic!
+    
     let quarterCircleView: QuarterCircleView = {
         let view = QuarterCircleView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -39,7 +41,6 @@ class MainViewController: UIViewController {
         segmentedControl.selectedSegmentIndex = 0
         segmentedControl.backgroundColor = UIColor(hexString: "F6F9F9")
         segmentedControl.tintColor = UIColor(hexString: "66A8FB")
-        segmentedControl.selectedSegmentTintColor = UIColor(hexString: "66A8FB")
         segmentedControl.layer.borderColor = UIColor(hexString: "66A8FB").cgColor
         segmentedControl.layer.borderWidth = 1
         return segmentedControl
@@ -60,7 +61,7 @@ class MainViewController: UIViewController {
         setUpNavigation()
         setUpView()
         setUpLayout()
-        loadAPI()
+//        loadAPI()
         setupCollectionView()
         view.backgroundColor = UIColor(hexString: "F6F9F9")
         stateSegmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
@@ -83,9 +84,6 @@ class MainViewController: UIViewController {
         view.addSubview(stateSegmentedControl)
     }
     // MARK: - MockData
-    func loadAPI() {
-//        let observable = Observable<String>.of(<#T##elements: String...##String#>)
-    }
     
     // MARK: - Setup Layout
     
@@ -205,7 +203,6 @@ extension MainViewController: UITableViewDataSource {
         default:
             break
         }
-//        cell.monneyLabel.text =  "+ " + "1.000.000"
         cell.separatorInset = UIEdgeInsets.zero
         cell.layoutMargins = UIEdgeInsets.zero
         return cell

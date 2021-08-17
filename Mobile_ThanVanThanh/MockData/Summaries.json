@@ -1,0 +1,21 @@
+[
+  {
+    "tpye": "Current Balance",
+    "balance": "5000000"
+  },
+  {
+    "userID": "Amount withdrawn",
+    "type": 1,
+    "balance": "1000000"
+  },
+  {
+    "userID": "Amount received",
+    "type": 1,
+    "balance": "2000000"
+  },
+  {
+    "userID": "Payment amount",
+    "type": 1,
+    "balance": "2000000"
+  }
+]

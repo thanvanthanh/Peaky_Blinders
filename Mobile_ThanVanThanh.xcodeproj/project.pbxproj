@@ -22,6 +22,8 @@
 		05B9C71826CA205100EE917A /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9C71726CA205100EE917A /* HomeCollectionViewCell.swift */; };
 		05B9C71A26CA20DF00EE917A /* PercentageCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9C71926CA20DF00EE917A /* PercentageCircleView.swift */; };
 		05BD3BA826CBA16900B37EAC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD3BA726CBA16900B37EAC /* Extension.swift */; };
+		05BD3BAA26CBB8FE00B37EAC /* Summaries.json in Resources */ = {isa = PBXBuildFile; fileRef = 05BD3BA926CBB8FE00B37EAC /* Summaries.json */; };
+		05BD3BB226CBC72700B37EAC /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD3BB126CBC72700B37EAC /* CircleButton.swift */; };
 		05E02D6F26CA69F4002DD65C /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E02D6E26CA69F4002DD65C /* HistoryTableViewCell.swift */; };
 		05E02D7126CA6B21002DD65C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E02D7026CA6B21002DD65C /* CircleView.swift */; };
 		8CAC99F7D25ADEF54786806D /* Pods_Mobile_ThanVanThanh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 897E4893D85ABCC5E961EC3A /* Pods_Mobile_ThanVanThanh.framework */; };
@@ -45,6 +47,8 @@
 		05B9C71726CA205100EE917A /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		05B9C71926CA20DF00EE917A /* PercentageCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageCircleView.swift; sourceTree = "<group>"; };
 		05BD3BA726CBA16900B37EAC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = ../../../../../Documents/Extension.swift; sourceTree = "<group>"; };
+		05BD3BA926CBB8FE00B37EAC /* Summaries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Summaries.json; sourceTree = "<group>"; };
+		05BD3BB126CBC72700B37EAC /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		05E02D6E26CA69F4002DD65C /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		05E02D7026CA6B21002DD65C /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		857EDD3E876BDCA496D87A4B /* Pods-Mobile_ThanVanThanh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mobile_ThanVanThanh.release.xcconfig"; path = "Target Support Files/Pods-Mobile_ThanVanThanh/Pods-Mobile_ThanVanThanh.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 		0591008926CB619A00F0F6B0 /* MockData */ = {
 			isa = PBXGroup;
 			children = (
+				05BD3BA926CBB8FE00B37EAC /* Summaries.json */,
 				0591008A26CB61AA00F0F6B0 /* TransactionHistory.json */,
 			);
 			path = MockData;
@@ -174,6 +179,7 @@
 			children = (
 				05B9C71426CA1E2C00EE917A /* QuarterCircleView.swift */,
 				05E02D7026CA6B21002DD65C /* CircleView.swift */,
+				05BD3BB126CBC72700B37EAC /* CircleButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05B9C6FD26CA04F800EE917A /* LaunchScreen.storyboard in Resources */,
+				05BD3BAA26CBB8FE00B37EAC /* Summaries.json in Resources */,
 				05B9C6FA26CA04F800EE917A /* Assets.xcassets in Resources */,
 				05B9C6F826CA04F500EE917A /* Main.storyboard in Resources */,
 				0591008B26CB61AA00F0F6B0 /* TransactionHistory.json in Resources */,
@@ -346,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BD3BB226CBC72700B37EAC /* CircleButton.swift in Sources */,
 				05E02D6F26CA69F4002DD65C /* HistoryTableViewCell.swift in Sources */,
 				0591009126CB665200F0F6B0 /* DetailSceneWorker.swift in Sources */,
 				05B9C71A26CA20DF00EE917A /* PercentageCircleView.swift in Sources */,

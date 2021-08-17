@@ -7,27 +7,35 @@
 
 import Foundation
 
-func readJson() {
-    // Get url for file
-    guard let fileUrl = Bundle.main.url(forResource: "TransactionHistory", withExtension: "json") else {
-        print("File could not be located at the given url")
-        return
-    }
+protocol DetailSceneWorkerLogic {
+    func getSumariesTransactionHistory(type: Int, filter: Int, completion:(Bool, Any?, Error) -> Void)
+}
 
-    do {
-        // Get data from file
-        let data = try Data(contentsOf: fileUrl)
-
-        // Decode data to a Dictionary<String, Any> object
-        guard let dictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
-            print("Could not cast JSON content as a Dictionary<String, Any>")
-            return
+class DetailSceneWorker: DetailSceneWorkerLogic {
+    func getSumariesTransactionHistory(type:Int, filter: Int, completion:(Bool, Any?, Error) -> Void) {
+        guard let path = Bundle.main.path(forResource: "TransactionHistory", ofType: "json") else { return }
+        let url = URL(fileURLWithPath: path)
+        do {
+            let data = try Data(contentsOf: url)
+            let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+            var listTrans: [TransactionHistory] = []
+            guard let array = json as? [[String: Any]] else { return }
+            for trans in array {
+                let newTransaction = TransactionHistory()
+                
+                var randomType = Int.random(in: 0...1)
+                if(filter != -1) {
+                    randomType = filter
+                }
+                newTransaction.dateTime = trans["dateTime"] as! String
+                newTransaction.content = trans["content"] as! String
+                newTransaction.transValue = Float(trans["transValue"] as! String) ?? 0.0
+                newTransaction.type = randomType
+                listTrans.append(newTransaction)
+            }
+            completion(true,listTrans, "" as! Error)
+        }catch {
+            completion(false, nil , error)
         }
-
-        // Print result
-        print(dictionary)
-    } catch {
-        // Print error if something went wrong
-        print("Error: \(error)")
     }
 }
