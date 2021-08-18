@@ -20,9 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.windowScene = windownScene
         
-        let vc = MainViewController()
+        let vc = AppTabBarViewController()
         let navi = UINavigationController(rootViewController: vc)
-        
+        navi.navigationBar.backgroundColor = .clear
+        navi.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navi.navigationBar.shadowImage = UIImage()
         window?.rootViewController = navi
         window?.makeKeyAndVisible()
     }

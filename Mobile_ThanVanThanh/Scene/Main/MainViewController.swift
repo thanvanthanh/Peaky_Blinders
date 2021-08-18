@@ -61,7 +61,6 @@ class MainViewController: UIViewController {
         setUpNavigation()
         setUpView()
         setUpLayout()
-//        loadAPI()
         setupCollectionView()
         view.backgroundColor = UIColor(hexString: "F6F9F9")
         stateSegmentedControl.addTarget(self, action: #selector(segmentedControlValueChanged(_:)), for: .valueChanged)
@@ -174,7 +173,6 @@ extension MainViewController: UITableViewDelegate {
 }
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 20
         let selectIndex = self.stateSegmentedControl.selectedSegmentIndex
         switch selectIndex {
         case 0:

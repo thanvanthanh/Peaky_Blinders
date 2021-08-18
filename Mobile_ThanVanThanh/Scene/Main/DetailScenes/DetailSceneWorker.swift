@@ -24,7 +24,7 @@ class DetailSceneWorker: DetailSceneWorkerLogic {
                 let newTransaction = TransactionHistory()
                 
                 var randomType = Int.random(in: 0...1)
-                if(filter != -1) {
+                if (filter != -1) {
                     randomType = filter
                 }
                 newTransaction.dateTime = trans["dateTime"] as! String
@@ -33,9 +33,9 @@ class DetailSceneWorker: DetailSceneWorkerLogic {
                 newTransaction.type = randomType
                 listTrans.append(newTransaction)
             }
-            completion(true,listTrans, "" as! Error)
-        }catch {
-            completion(false, nil , error)
+            completion(true, listTrans, "" as! Error)
+        } catch {
+            completion(false, nil, error)
         }
     }
 }
