@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05049B6726CE0303001826F9 /* TranstData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05049B6626CE0303001826F9 /* TranstData.swift */; };
+		05049B6926CE0AE4001826F9 /* ConvertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05049B6826CE0AE4001826F9 /* ConvertHelper.swift */; };
+		05049B6B26CE109D001826F9 /* Withdrawn.json in Resources */ = {isa = PBXBuildFile; fileRef = 05049B6A26CE109D001826F9 /* Withdrawn.json */; };
 		05142B1F26CD0C5E0051A7E2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05142B1E26CD0C5E0051A7E2 /* DetailViewController.swift */; };
 		05142B2226CD0CA10051A7E2 /* CreatTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05142B2126CD0CA10051A7E2 /* CreatTransactionViewController.swift */; };
 		05142B2526CD0CDE0051A7E2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05142B2426CD0CDE0051A7E2 /* SettingViewController.swift */; };
 		05142B2926CD0D9C0051A7E2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05142B2826CD0D9C0051A7E2 /* HistoryViewController.swift */; };
 		05142B2B26CD0DB70051A7E2 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05142B2A26CD0DB70051A7E2 /* TabBarViewController.swift */; };
 		0591008B26CB61AA00F0F6B0 /* TransactionHistory.json in Resources */ = {isa = PBXBuildFile; fileRef = 0591008A26CB61AA00F0F6B0 /* TransactionHistory.json */; };
-		0591008E26CB63E500F0F6B0 /* TransactionHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591008D26CB63E500F0F6B0 /* TransactionHistory.swift */; };
-		0591009126CB665200F0F6B0 /* DetailSceneWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591009026CB665200F0F6B0 /* DetailSceneWorker.swift */; };
+		0591008E26CB63E500F0F6B0 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0591008D26CB63E500F0F6B0 /* DataLoader.swift */; };
 		05B9C6F126CA04F500EE917A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9C6F026CA04F500EE917A /* AppDelegate.swift */; };
 		05B9C6F326CA04F500EE917A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9C6F226CA04F500EE917A /* SceneDelegate.swift */; };
 		05B9C6F526CA04F500EE917A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9C6F426CA04F500EE917A /* ViewController.swift */; };
@@ -35,14 +37,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05049B6626CE0303001826F9 /* TranstData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranstData.swift; sourceTree = "<group>"; };
+		05049B6826CE0AE4001826F9 /* ConvertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertHelper.swift; sourceTree = "<group>"; };
+		05049B6A26CE109D001826F9 /* Withdrawn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Withdrawn.json; sourceTree = "<group>"; };
 		05142B1E26CD0C5E0051A7E2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		05142B2126CD0CA10051A7E2 /* CreatTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatTransactionViewController.swift; sourceTree = "<group>"; };
 		05142B2426CD0CDE0051A7E2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		05142B2826CD0D9C0051A7E2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		05142B2A26CD0DB70051A7E2 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		0591008A26CB61AA00F0F6B0 /* TransactionHistory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TransactionHistory.json; sourceTree = "<group>"; };
-		0591008D26CB63E500F0F6B0 /* TransactionHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistory.swift; sourceTree = "<group>"; };
-		0591009026CB665200F0F6B0 /* DetailSceneWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSceneWorker.swift; sourceTree = "<group>"; };
+		0591008D26CB63E500F0F6B0 /* DataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoader.swift; sourceTree = "<group>"; };
 		05B9C6ED26CA04F500EE917A /* Mobile_ThanVanThanh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mobile_ThanVanThanh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05B9C6F026CA04F500EE917A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05B9C6F226CA04F500EE917A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				05BD3BA926CBB8FE00B37EAC /* Summaries.json */,
+				05049B6A26CE109D001826F9 /* Withdrawn.json */,
 				0591008A26CB61AA00F0F6B0 /* TransactionHistory.json */,
 			);
 			path = MockData;
@@ -122,17 +127,10 @@
 		0591008C26CB63C700F0F6B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0591008D26CB63E500F0F6B0 /* TransactionHistory.swift */,
+				0591008D26CB63E500F0F6B0 /* DataLoader.swift */,
+				05049B6626CE0303001826F9 /* TranstData.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		0591008F26CB662A00F0F6B0 /* DetailScenes */ = {
-			isa = PBXGroup;
-			children = (
-				0591009026CB665200F0F6B0 /* DetailSceneWorker.swift */,
-			);
-			path = DetailScenes;
 			sourceTree = "<group>";
 		};
 		05B9C6E426CA04F500EE917A = {
@@ -184,7 +182,6 @@
 		05B9C70726CA05B600EE917A /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				0591008F26CB662A00F0F6B0 /* DetailScenes */,
 				05B9C70F26CA164C00EE917A /* View */,
 				05B9C70A26CA064300EE917A /* MainViewController.swift */,
 			);
@@ -244,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				05BD3BA726CBA16900B37EAC /* Extension.swift */,
+				05049B6826CE0AE4001826F9 /* ConvertHelper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -328,6 +326,7 @@
 				05B9C6FD26CA04F800EE917A /* LaunchScreen.storyboard in Resources */,
 				05BD3BAA26CBB8FE00B37EAC /* Summaries.json in Resources */,
 				05B9C6FA26CA04F800EE917A /* Assets.xcassets in Resources */,
+				05049B6B26CE109D001826F9 /* Withdrawn.json in Resources */,
 				05B9C6F826CA04F500EE917A /* Main.storyboard in Resources */,
 				0591008B26CB61AA00F0F6B0 /* TransactionHistory.json in Resources */,
 			);
@@ -402,7 +401,6 @@
 			files = (
 				05BD3BB226CBC72700B37EAC /* CircleButton.swift in Sources */,
 				05E02D6F26CA69F4002DD65C /* HistoryTableViewCell.swift in Sources */,
-				0591009126CB665200F0F6B0 /* DetailSceneWorker.swift in Sources */,
 				05142B2226CD0CA10051A7E2 /* CreatTransactionViewController.swift in Sources */,
 				05B9C71A26CA20DF00EE917A /* PercentageCircleView.swift in Sources */,
 				05142B2526CD0CDE0051A7E2 /* SettingViewController.swift in Sources */,
@@ -412,13 +410,15 @@
 				05B9C6F126CA04F500EE917A /* AppDelegate.swift in Sources */,
 				05E02D7126CA6B21002DD65C /* CircleView.swift in Sources */,
 				05B9C6F326CA04F500EE917A /* SceneDelegate.swift in Sources */,
+				05049B6926CE0AE4001826F9 /* ConvertHelper.swift in Sources */,
 				05BD3BA826CBA16900B37EAC /* Extension.swift in Sources */,
+				05049B6726CE0303001826F9 /* TranstData.swift in Sources */,
 				05142B2B26CD0DB70051A7E2 /* TabBarViewController.swift in Sources */,
 				05B9C70C26CA064300EE917A /* MainViewController.swift in Sources */,
 				05142B1F26CD0C5E0051A7E2 /* DetailViewController.swift in Sources */,
 				05142B2926CD0D9C0051A7E2 /* HistoryViewController.swift in Sources */,
 				05B9C71526CA1E2C00EE917A /* QuarterCircleView.swift in Sources */,
-				0591008E26CB63E500F0F6B0 /* TransactionHistory.swift in Sources */,
+				0591008E26CB63E500F0F6B0 /* DataLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

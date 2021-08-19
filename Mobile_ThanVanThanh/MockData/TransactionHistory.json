@@ -4,7 +4,38 @@
         "dateTime": "08:28 - 10-03-2021",
         "index": 0,
         "content": "Payment Oders",
-        "transValue": "2000000",
+        "transValue": "2.000.000",
+        "type": 1
+        
+    },
+    {
+        "dateTime": "08:28 - 10-03-2021",
+        "index": 0,
+        "content": "Payment",
+        "transValue": "2.700.000",
+        "type": 1
+    },
+    {
+        "dateTime": "08:28 - 10-03-2021",
+        "index": 0,
+        "content": "Electricity payment",
+        "transValue": "1.200.000",
+        "type": 1
+        
+    },
+    {
+        "dateTime": "08:28 - 10-03-2021",
+        "index": 0,
+        "content": "Monthly payment",
+        "transValue": "800.000",
+        "type": 1
+        
+    },
+    {
+        "dateTime": "08:28 - 10-03-2021",
+        "index": 0,
+        "content": "Water bill payment",
+        "transValue": "4.600.000",
         "type": 1
         
     },
@@ -12,14 +43,7 @@
         "dateTime": "08:28 - 10-03-2021",
         "index": 0,
         "content": "Payment Oders",
-        "transValue": "2000000",
-        "type": 1
-    },
-    {
-        "dateTime": "08:28 - 10-03-2021",
-        "index": 0,
-        "content": "Payment Oders",
-        "transValue": "2000000",
+        "transValue": "1.000.000",
         "type": 1
         
     },
@@ -27,7 +51,7 @@
         "dateTime": "08:28 - 10-03-2021",
         "index": 0,
         "content": "Payment Oders",
-        "transValue": "2000000",
+        "transValue": "2.450.000",
         "type": 1
         
     },
@@ -35,7 +59,7 @@
         "dateTime": "08:28 - 10-03-2021",
         "index": 0,
         "content": "Payment Oders",
-        "transValue": "2000000",
+        "transValue": "2.680.000",
         "type": 1
         
     },
@@ -43,31 +67,7 @@
         "dateTime": "08:28 - 10-03-2021",
         "index": 0,
         "content": "Payment Oders",
-        "transValue": "2000000",
-        "type": 1
-        
-    },
-    {
-        "dateTime": "08:28 - 10-03-2021",
-        "index": 0,
-        "content": "Payment Oders",
-        "transValue": "2000000",
-        "type": 1
-        
-    },
-    {
-        "dateTime": "08:28 - 10-03-2021",
-        "index": 0,
-        "content": "Payment Oders",
-        "transValue": "2000000",
-        "type": 1
-        
-    },
-    {
-        "dateTime": "08:28 - 10-03-2021",
-        "index": 0,
-        "content": "Payment Oders",
-        "transValue": "2000000",
+        "transValue": "1.050.000",
         "type": 1
     }
 ]

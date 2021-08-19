@@ -55,15 +55,7 @@ class HistoryTableViewCell: UITableViewCell {
         label.font = .boldSystemFont(ofSize: 18)
         return label
     }()
-//    var listTrans: ResultItem? {
-//        didSet {
-//            if let listTrans = listTrans {
-//                timeLabel.text = listTrans.dateTime
-//                monneyLabel.text = String(listTrans.transValue)
-//                tradingLabel.text = listTrans.content
-//            }
-//        }
-//    }
+    var data = DataLoader().transData
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -74,6 +66,7 @@ class HistoryTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         setupView()
         setupLayout()
+        
         // Configure the view for the selected state
     }
     // MARK: - SetupView

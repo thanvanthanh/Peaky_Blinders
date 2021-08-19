@@ -10,8 +10,9 @@ import RxSwift
 import RxCocoa
 
 class MainViewController: UIViewController {
-    
-    private var worker: DetailSceneWorkerLogic!
+
+    let data = DataLoader().transData
+    let dataWidth = WidthLoader().withdrawnData
     
     let quarterCircleView: QuarterCircleView = {
         let view = QuarterCircleView()
@@ -58,6 +59,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        var data = DataLoader().transData
+//        print(data)
         setUpNavigation()
         setUpView()
         setUpLayout()
@@ -172,13 +175,14 @@ extension MainViewController: UITableViewDelegate {
     }
 }
 extension MainViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let selectIndex = self.stateSegmentedControl.selectedSegmentIndex
         switch selectIndex {
         case 0:
-            return 8
+            return data.count
         case 1:
-            return 10
+            return data.count
         default:
             break
         }
@@ -193,10 +197,14 @@ extension MainViewController: UITableViewDataSource {
         let selectIndex = self.stateSegmentedControl.selectedSegmentIndex
         switch selectIndex {
         case 0:
-            cell.monneyLabel.text = "+ " + "1.000.000"
+            cell.monneyLabel.text = "+ " + data[indexPath.row].transValue
+            cell.timeLabel.text = data[indexPath.row].dateTime
+            cell.tradingLabel.text = data[indexPath.row].content
             cell.monneyLabel.textColor = UIColor(hexString: "00237B")
         case 1:
-            cell.monneyLabel.text = "- " + "2.000.000"
+            cell.monneyLabel.text = "- " + dataWidth[indexPath.row].transValue
+            cell.timeLabel.text = dataWidth[indexPath.row].dateTime
+            cell.tradingLabel.text = dataWidth[indexPath.row].content
             cell.monneyLabel.textColor = .red
         default:
             break
