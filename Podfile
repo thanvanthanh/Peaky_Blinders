@@ -9,5 +9,6 @@ target 'Mobile_ThanVanThanh' do
 	pod 'RxSwift'
 	pod 'RxCocoa'
 	pod 'SwiftLint'
+	pod 'RealmSwift'
 	
 end

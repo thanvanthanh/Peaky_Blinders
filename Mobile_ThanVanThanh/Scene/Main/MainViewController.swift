@@ -11,8 +11,8 @@ import RxCocoa
 
 class MainViewController: UIViewController {
     
-    let data = DataLoader().transData
-    let dataWidth = WidthLoader().withdrawnData
+    var data = DataLoader().transData
+    var dataWidth = WidthLoader().withdrawnData
     
     let quarterCircleView: QuarterCircleView = {
         let view = QuarterCircleView()
@@ -175,6 +175,23 @@ extension MainViewController: UITableViewDelegate {
     }
 }
 extension MainViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let selectIndex = self.stateSegmentedControl.selectedSegmentIndex
+        switch selectIndex {
+        case 0:
+            if editingStyle == .delete {
+              self.data.remove(at: indexPath.row)
+              self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
+        case 1:
+            if editingStyle == .delete {
+              self.dataWidth.remove(at: indexPath.row)
+              self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            }
+        default:
+            break
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let selectIndex = self.stateSegmentedControl.selectedSegmentIndex

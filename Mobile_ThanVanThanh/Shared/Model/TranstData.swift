@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct Received: Codable {
     var dateTime: String
     var index: Int

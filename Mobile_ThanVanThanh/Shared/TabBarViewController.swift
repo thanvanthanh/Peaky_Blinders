@@ -11,6 +11,9 @@ class AppTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     var timer: Timer!
     
+    var data = [Received]()
+        
+    
     var mainVC: MainViewController!
     var historyVC: HistoryViewController!
     var creatVC: CreatTransactionViewController!
@@ -109,6 +112,14 @@ class AppTabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     @objc func routToNewScene() {
         let destinationVC = CreatTransactionViewController()
+        destinationVC.creatTranst = {
+            [weak self] post in
+            guard let strongSelf = self else {
+                return
+            }
+            strongSelf.data.append(post)
+            strongSelf.mainVC.tableView.reloadData()
+        }
         let navigation = UINavigationController(rootViewController: destinationVC)
         navigation.modalPresentationStyle = .fullScreen
         present(navigation, animated: true, completion: {})

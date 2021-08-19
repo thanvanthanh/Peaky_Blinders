@@ -8,12 +8,10 @@
 import Foundation
 
 class ConvertHelper {
-    static func stringFromDate(money: String, format: String) -> String {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = NumberFormatter.Style.currencyAccounting
-//        formatter.locale = Locale(identifier: "DE")
-        formatter.currencyCode = "vnd"
-        let string = formatter.string(from: 1234567) ?? ""
+    static func stringFromDate(date: Date, format: String) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = format
+        let string = formatter.string(from: date)
         return string
     }
 }
