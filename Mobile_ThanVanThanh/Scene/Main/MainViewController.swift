@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 class MainViewController: UIViewController {
-
+    
     let data = DataLoader().transData
     let dataWidth = WidthLoader().withdrawnData
     
@@ -59,8 +59,8 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var data = DataLoader().transData
-//        print(data)
+        //        var data = DataLoader().transData
+        //        print(data)
         setUpNavigation()
         setUpView()
         setUpLayout()
