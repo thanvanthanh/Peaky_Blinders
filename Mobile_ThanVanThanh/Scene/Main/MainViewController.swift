@@ -182,7 +182,7 @@ extension MainViewController: UITableViewDataSource {
         case 0:
             return data.count
         case 1:
-            return data.count
+            return dataWidth.count
         default:
             break
         }
