@@ -10,6 +10,7 @@
 		05049B6726CE0303001826F9 /* TranstData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05049B6626CE0303001826F9 /* TranstData.swift */; };
 		05049B6926CE0AE4001826F9 /* ConvertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05049B6826CE0AE4001826F9 /* ConvertHelper.swift */; };
 		05049B6B26CE109D001826F9 /* Withdrawn.json in Resources */ = {isa = PBXBuildFile; fileRef = 05049B6A26CE109D001826F9 /* Withdrawn.json */; };
+		05049B6D26CE16EE001826F9 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05049B6C26CE16EE001826F9 /* Extension.swift */; };
 		05142B1F26CD0C5E0051A7E2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05142B1E26CD0C5E0051A7E2 /* DetailViewController.swift */; };
 		05142B2226CD0CA10051A7E2 /* CreatTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05142B2126CD0CA10051A7E2 /* CreatTransactionViewController.swift */; };
 		05142B2526CD0CDE0051A7E2 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05142B2426CD0CDE0051A7E2 /* SettingViewController.swift */; };
@@ -28,7 +29,6 @@
 		05B9C71526CA1E2C00EE917A /* QuarterCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9C71426CA1E2C00EE917A /* QuarterCircleView.swift */; };
 		05B9C71826CA205100EE917A /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9C71726CA205100EE917A /* HomeCollectionViewCell.swift */; };
 		05B9C71A26CA20DF00EE917A /* PercentageCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B9C71926CA20DF00EE917A /* PercentageCircleView.swift */; };
-		05BD3BA826CBA16900B37EAC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD3BA726CBA16900B37EAC /* Extension.swift */; };
 		05BD3BAA26CBB8FE00B37EAC /* Summaries.json in Resources */ = {isa = PBXBuildFile; fileRef = 05BD3BA926CBB8FE00B37EAC /* Summaries.json */; };
 		05BD3BB226CBC72700B37EAC /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BD3BB126CBC72700B37EAC /* CircleButton.swift */; };
 		05E02D6F26CA69F4002DD65C /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E02D6E26CA69F4002DD65C /* HistoryTableViewCell.swift */; };
@@ -40,6 +40,7 @@
 		05049B6626CE0303001826F9 /* TranstData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranstData.swift; sourceTree = "<group>"; };
 		05049B6826CE0AE4001826F9 /* ConvertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertHelper.swift; sourceTree = "<group>"; };
 		05049B6A26CE109D001826F9 /* Withdrawn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Withdrawn.json; sourceTree = "<group>"; };
+		05049B6C26CE16EE001826F9 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		05142B1E26CD0C5E0051A7E2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		05142B2126CD0CA10051A7E2 /* CreatTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatTransactionViewController.swift; sourceTree = "<group>"; };
 		05142B2426CD0CDE0051A7E2 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		05B9C71426CA1E2C00EE917A /* QuarterCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarterCircleView.swift; sourceTree = "<group>"; };
 		05B9C71726CA205100EE917A /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		05B9C71926CA20DF00EE917A /* PercentageCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageCircleView.swift; sourceTree = "<group>"; };
-		05BD3BA726CBA16900B37EAC /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = ../../../../../Documents/Extension.swift; sourceTree = "<group>"; };
 		05BD3BA926CBB8FE00B37EAC /* Summaries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Summaries.json; sourceTree = "<group>"; };
 		05BD3BB126CBC72700B37EAC /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		05E02D6E26CA69F4002DD65C /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -240,8 +240,8 @@
 		05BD3BA626CBA14800B37EAC /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				05BD3BA726CBA16900B37EAC /* Extension.swift */,
 				05049B6826CE0AE4001826F9 /* ConvertHelper.swift */,
+				05049B6C26CE16EE001826F9 /* Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -411,10 +411,10 @@
 				05E02D7126CA6B21002DD65C /* CircleView.swift in Sources */,
 				05B9C6F326CA04F500EE917A /* SceneDelegate.swift in Sources */,
 				05049B6926CE0AE4001826F9 /* ConvertHelper.swift in Sources */,
-				05BD3BA826CBA16900B37EAC /* Extension.swift in Sources */,
 				05049B6726CE0303001826F9 /* TranstData.swift in Sources */,
 				05142B2B26CD0DB70051A7E2 /* TabBarViewController.swift in Sources */,
 				05B9C70C26CA064300EE917A /* MainViewController.swift in Sources */,
+				05049B6D26CE16EE001826F9 /* Extension.swift in Sources */,
 				05142B1F26CD0C5E0051A7E2 /* DetailViewController.swift in Sources */,
 				05142B2926CD0D9C0051A7E2 /* HistoryViewController.swift in Sources */,
 				05B9C71526CA1E2C00EE917A /* QuarterCircleView.swift in Sources */,
@@ -569,6 +569,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8AJXZSJ7F;
 				INFOPLIST_FILE = Mobile_ThanVanThanh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -589,6 +590,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D8AJXZSJ7F;
 				INFOPLIST_FILE = Mobile_ThanVanThanh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
